@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es-ve">
+<head>
+<meta charset="iso-8859-1">
+<title>;)</title>
+<meta name="generator" content="WYSIWYG Web Builder 11 - http://www.wysiwygwebbuilder.com">
+<link href="x8g.ico" rel="shortcut icon" type="image/x-icon">
+<link href="x8gestion.png" rel="apple-touch-icon" sizes="1024x768">
+<link href="Sin_titulo4.css" rel="stylesheet">
+<link href="GestionEmpresarial.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="wb.carousel.min.js"></script>
+<script src="affix.min.js"></script>
+<script src="scrollspy.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   var Carousel1Opts =
+   {
+      delay: 6000,
+      duration: 500,
+      easing: 'linear',
+      mode: 'forward-circular',
+      direction: '',
+      scalemode: 3,
+      pagination: true,
+      pagination_img_default: 'images/page_default.png',
+      pagination_img_active: 'images/page_active.png',
+      start: 0
+   };
+   $("#Carousel1").carousel(Carousel1Opts);
+   $("#Carousel1_back a").click(function()
+   {
+      $('#Carousel1').carousel('prev');
+   });
+   $("#Carousel1_next a").click(function()
+   {
+      $('#Carousel1').carousel('next');
+   });
+   $('#MegaMenu2 .submenu ul li h2 a').addClass('ui-widget-header');
+   $('#MegaMenu2 .submenu ul li a').hover(function()
+   {
+      $(this).addClass('ui-state-hover');
+   }, function()
+   {
+      $(this).removeClass('ui-state-hover');
+   });
+   $('.ui-state-default').hover(function()
+   {
+      $(this).addClass('ui-state-hover');
+   }, function()
+   {
+      $(this).removeClass('ui-state-hover');
+   });
+   $('#MegaMenu2 li').hover(function()
+   {
+      var top = $(this).find('.button').outerHeight();
+      $(this).find('.submenu').css( {'top': top });
+      $(this).find('.submenu').show();
+      var maxWidth = 0;
+      $(this).find('ul').each(function()
+      {
+         $(this).find('li').each(function()
+         {
+            $(this).css('width', 'auto');
+            if ($(this).width() > maxWidth)
+               maxWidth = $(this).width();
+         });
+      });
+      $(this).find('ul').each(function()
+      {
+         $(this).find('li').width(maxWidth);
+         $(this).css({'width' : maxWidth+4});
+      });
+      if ($(this).find('.row').length > 0 )
+      {
+         var maxRowWidth = 0;
+         $(this).find('.row').each(function()
+         {
+            var width = 0;
+            $(this).find('ul').each(function()
+            {
+               width += $(this).width();
+            });
+            if (width > maxRowWidth)
+            {
+               maxRowWidth = width;
+            }
+         });
+         $(this).find('.submenu').css({'width' : maxRowWidth});
+         $(this).find('.row:last').css({'margin': '0'});
+      }
+      else
+      {
+         var width = 0;
+         $(this).find('ul').each(function()
+         {
+            width += $(this).width();
+         });
+         $(this).find('.submenu').css({'width' : width});
+      }
+      $(this).find('.submenu').slideDown();
+   }, function()
+   {
+      $(this).find('.submenu').hide();
+   })
+   $('#MegaMenu2 li .submenu').hide();
+   $("#MegaMenu2").affix({offset:{top: $("#MegaMenu2").offset().top}});
+});
+</script>
+</head>
+<body data-spy="scroll">
+<div id="container">
+<img src="images/img0005.gif" id="Text9" alt=""  style="position:absolute;left:662px;top:1731px;width:302px;height:1189px;z-index:8;">
+<img src="images/img0003.gif" id="Text7" alt=""  style="position:absolute;left:12px;top:1380px;width:647px;height:1522px;z-index:9;">
+<img src="images/img0004.gif" id="Text1" alt=""  style="position:absolute;left:662px;top:1379px;width:302px;height:348px;z-index:10;">
+<div id="Blog1" style="overflow:hidden;position:absolute;left:12px;top:513px;width:958px;height:120px;z-index:11;">
+<div class="blogitem">
+   <span class="blogsubject">Contacto</span>
+   <div class="blogthumb"><a href="images/X8tt.png"><img alt="Contacto" src="images/X8tt.png"></a></div>
+   <div class="blogdate">08/06/2017<br></div>
+   <br>
+   <div class="blogcomments"><a href="mailto:luispreciado@x8.com.ve?subject=Contacto">Conrtactese con nosotros. Envienos su comentario o requerimiento:</a></div>
+</div>
+<div class="clearfix visible-col1"></div>
+<img alt="" src="images/X8tt.png" width="100%" height="598px" style="border-width:0;margin-bottom:6px">
+</div>
+<div id="wb_Text2" style="position:absolute;left:593px;top:469px;width:377px;height:32px;text-align:right;z-index:12;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Contacto: luispreciado@x8.com.ve<br>Telefonos:&nbsp; +584127251606&nbsp;&nbsp; +584142307386&nbsp; +582123116392</span></div>
+<table style="position:absolute;left:50px;top:50px;width:106px;height:54px;z-index:13;" id="Table1">
+<tr>
+<td class="cell0"><span style="color:#000000;font-family:Tahoma;font-size:15px;line-height:17px;"> </span></td>
+<td class="cell1"><span style="color:#000000;font-family:Tahoma;font-size:15px;line-height:17px;"> </span></td>
+</tr>
+</table>
+<hr id="Line1" style="position:absolute;left:14px;top:2898px;width:954px;height:26px;z-index:14;">
+<div id="wb_Text8" style="position:absolute;left:102px;top:2938px;width:811px;height:18px;text-align:center;z-index:15;">
+<span style="color:#000000;font-family:Tahoma;font-size:15px;"><strong>Licencia y Copyright: Ing. Luis Preciado. 2017. Caracas. Venezuela</strong></span></div>
+<div id="wb_MegaMenu2" style="position:absolute;left:12px;top:469px;width:527px;height:30px;z-index:16;">
+   <ul class="ui-widget" id="MegaMenu2">
+      <li>
+      <a href="#" class="button ui-state-default"><span class="ui-icon"></span>Sistemas</a>
+      <div class="submenu ui-widget-content">
+      <div class="row">
+         <ul>
+            <li><h2>Gestion Empresarial Integrados</h2></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Sistema de Gestion Empresarial y Comercial. (Administrativo)</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Gestión Administrativa para Profesionales y Empresas de Servicios</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Gestion Empresarial para Peluquerías</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Gestion empresarial para Restaurantes</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Gestion de Hotelería</a></li>
+         </ul>
+      </div>
+      <div class="row">
+         <ul>
+            <li><h2>Otros Sistemas</h2></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Nómina Profesional</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Contabilidad General</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Eventos (version full day)</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Condominios</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Call Center</a></li>
+         </ul>
+      </div>
+      </div>
+      </li>
+      <li>
+      <a href="#" class="button ui-state-default"><span class="ui-icon"></span>Seguridad y Vigilancia</a>
+      <div class="submenu ui-widget-content">
+      <div class="row">
+         <ul>
+            <li><h2>Vigilancia Digital</h2></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Cámaras</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Digital video recorder DVRs -  NVRs</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Cableado y Accesorios</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Video Porteros</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Alarmas</a></li>
+         </ul>
+      </div>
+      <div class="row">
+         <ul>
+            <li><h2>Seguridad</h2></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Controles de Acceso</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Cercados</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Detectores de metales</a></li>
+         </ul>
+      </div>
+      </div>
+      </li>
+      <li>
+      <a href="#" class="button ui-state-default"><span class="ui-icon"></span>Equipos y Servicios</a>
+      <div class="submenu ui-widget-content">
+      <div class="row">
+         <ul>
+            <li><h2>Equipos y Accesorios</h2></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Computadores</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Equipos de Impresión</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Dispositivos Móviles</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Accesorios y periféricos</a></li>
+         </ul>
+      </div>
+      <div class="row">
+         <ul>
+            <li><h2>Servicios</h2></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Reparación de Equipos y Dispositivos</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Reformateo, Eliminación de Malwares y virus</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Mantenimiento preventivo</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Diseño e Instalacíón de Redes Wan y Lan</a></li>
+         </ul>
+      </div>
+      <div class="row">
+         <ul>
+            <li><h2>Desarrollos y programación a la medida</h2></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Elaboracion de aplicaciones Android  APPS</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Diseño y programación  de Sitios Web</a></li>
+            <li><a class="ui-state-active" href="./GestionEmpresarial.html"><span class="ui-icon"></span>Desarrollos a la medida</a></li>
+         </ul>
+      </div>
+      </div>
+      </li>
+   </ul>
+</div>
+<div id="wb_Image3" style="position:absolute;left:8px;top:647px;width:961px;height:732px;z-index:17;">
+<img src="images/X8GESTION.JPG" id="Image3" alt=""></div>
+</div>
+<div id="wb_Carousel1" style="position:absolute;left:0px;top:9px;width:970px;height:448px;z-index:18;overflow:hidden;">
+<div id="Carousel1" style="position:absolute">
+<div class="frame frame-1">
+<div class="innerframe">
+<div id="wb_Image1" style="position:absolute;left:80px;top:49px;width:289px;height:279px;z-index:0;">
+<img src="images/X8tt.png" id="Image1" alt=""></div>
+<div id="wb_Text6" style="position:absolute;left:369px;top:84px;width:506px;height:105px;text-align:right;z-index:1;">
+<span style="color:#000000;font-family:Tahoma;font-size:29px;"><strong>Expertos en computación tecnología, sistemas y seguridad empresaria</strong></span><span style="color:#000000;font-family:Tahoma;font-size:24px;"><strong>l</strong></span></div>
+</div>
+</div>
+<div class="frame frame-2">
+<div class="innerframe">
+<div id="wb_Text3" style="position:absolute;left:1082px;top:72px;width:390px;height:303px;text-align:right;z-index:2;">
+<span style="color:#000000;font-family:Arial;font-size:24px;">No importa donde estés (a traves de internet),&nbsp; puedes ver quien toca&nbsp; el timbre y hablar con&nbsp; esa persona en tu celular, tableta&nbsp; o pc.<br><br></span><span style="color:#000000;font-family:Arial;font-size:21px;">Puede grabar a quien&nbsp; a los visitantes.<br><br>Te avisa cuando alguien&nbsp; se para y&nbsp; no toca el timbre.<br><br>Tiene&nbsp; vista&nbsp; de 180 grados y alta&nbsp; resolucion 720p&nbsp; </span></div>
+<div id="wb_Image2" style="position:absolute;left:1538px;top:77px;width:295px;height:276px;z-index:3;">
+<img src="images/videoportero2.gif" id="Image2" alt=""></div>
+</div>
+</div>
+<div class="frame frame-3">
+<div class="innerframe">
+<div id="wb_Text4" style="position:absolute;left:2340px;top:107px;width:465px;height:240px;text-align:right;z-index:4;">
+<span style="color:#000000;font-family:Tahoma;font-size:32px;"><strong>Seguridad y Vigilancia.</strong></span><span style="color:#000000;font-family:Arial;font-size:24px;"><br><br></span><span style="color:#000000;font-family:Tahoma;font-size:24px;">Equipos, diseño&nbsp; e instalación de&nbsp; sofisticados sistemas de vigilancia digital.<br><br>Sistemas y&nbsp; dispositivos de seguridad:<br>Controles de&nbsp; Acesso, Video&nbsp; Porteros, Alarmas&nbsp; Inalambricas.</span></div>
+<div id="wb_Image4" style="position:absolute;left:1988px;top:33px;width:300px;height:299px;z-index:5;">
+<img src="images/domom.gif" id="Image4" alt=""></div>
+</div>
+</div>
+<div class="frame frame-4">
+<div class="innerframe">
+<div id="wb_Image5" style="position:absolute;left:2968px;top:49px;width:411px;height:310px;z-index:6;">
+<img src="images/empresario1.jpg" id="Image5" alt=""></div>
+<div id="wb_Text5" style="position:absolute;left:3419px;top:87px;width:345px;height:195px;text-align:right;z-index:7;">
+<span style="color:#000000;font-family:Tahoma;font-size:32px;">Desarrollo de APPS<br>Aplicaciones y&nbsp; paginas&nbsp; web adaptadas a&nbsp; smartphones, tablets y&nbsp; equipos móviles.</span><span style="color:#000000;font-family:Arial;font-size:24px;"> </span></div>
+</div>
+</div>
+</div>
+<div id="Carousel1_back" style="position:absolute;left:4px;top:46%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Back" style="border-width:0" src="images/carousel_back.png"></a></div>
+<div id="Carousel1_next" style="position:absolute;right:4px;top:46%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Next" style="border-width:0" src="images/carousel_next.png"></a></div>
+</div>
+</body>
+</html>
